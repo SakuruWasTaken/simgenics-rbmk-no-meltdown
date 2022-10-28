@@ -2,14 +2,16 @@
 <img src="https://cdn.discordapp.com/attachments/832540923278786600/1035374960681693236/aaaa.PNG">
 This is a modified version of itchy-avacado's improved version of the Simgenics RBMK simulator, the only difference is it won't terminate the simulation if you go above 100% neutron flux.
 
-# How to run
+# How to run the pre-patched simulator
 You can download the files [here](https://github.com/SakuruWasTaken/simgenics-rbmk-no-meltdown/archive/refs/heads/main.zip)
 
 Then extract them into a folder.
 
 Then open the folder named "Chernobyl Reactor Simulator" and run RXMODEL.exe
 
-# How I made this
+You do not need to follow the below instructions if you just want to run it.
+
+# How to patch the simulator manually
 First, you need to open RXMODEL.exe in dnspy (which you can download [here](https://github.com/dnSpy/dnSpy/releases/tag/v6.1.8), then navigate to the class "model_timer", then do ctrl+f and search "meltdown"
 
 Now, you will see a line that says flag3 = (flx > 1f);  right click on it, and click "Edit IL Instructions"
