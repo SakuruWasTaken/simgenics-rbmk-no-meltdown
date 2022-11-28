@@ -15,7 +15,7 @@ You do not need to follow the below instructions if you just want to run it.
 First, you need to open RXMODEL.exe in dnspy (which you can download [here](https://github.com/dnSpy/dnSpy/releases/tag/v6.1.8), then navigate to the class "model_timer", then do ctrl+f and search "meltdown"
 
 Now, you will see a line that says flag3 = (flx > 1f);  right click on it, and click "Edit IL Instructions"
-You need to change the value "1" to something higher, for instance 1 = 100%, 2 = 200% and so on, i just set it to 999, but you can set it to anything you want.
+You need to change the value "1" to something higher, for instance 1 = 100%, 2 = 200% and so on, i just set it to 999, but you can set it to anything you want, you can also completely disable it by NOPing the instructions, but i will not be covering how to do that.
 
 Once you've changed the value, click OK, then go to File, then Save Module, then set the path to whatever you want, then click OK.
 
